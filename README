@@ -1,0 +1,8 @@
+dependencies
+
+mjpg_streamer
+
+/etc/rc.local
+
+su - -c "/home/pi/rpi-streamer/start.sh" pi
+
