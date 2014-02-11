@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+SCRIPT=$(readlink -f "$0")
+SCRIPTDIR=$(dirname "$SCRIPT")
+BASEDIR=$(dirname "$SCRIPTDIR")
+
+SPOOLDIR="$BASEDIR/spool"
+PIC="pic.jpg"
+
+mkdir -p "$SPOOLDIR"
+
+raspistill --nopreview -rot 180 -w 800 -h 600 -q 85 -o "$SPOOLDIR/$PIC" -tl 500 -t 999999 -th 0:0:0 >/dev/null 2>/dev/null
