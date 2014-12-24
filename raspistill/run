@@ -4,4 +4,4 @@ source ../common
 
 mkdir -p "$SPOOLDIR"
 
-raspistill --nopreview -rot 180 -w 800 -h 600 -q 85 -o "$SPOOLDIR/$PIC" -tl 500 -t 999999 -th 0:0:0 >/dev/null 2>/dev/null
+raspistill --nopreview -rot 90 -w 800 -h 600 -q 85 -o "$SPOOLDIR/$PIC" -tl 500 -t 999999 -th 0:0:0 >/dev/null 2>/dev/null
